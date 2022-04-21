@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    float: none;
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url('fonts/JosefinSans-Regular.ttf'), url('fonts/JosefinSans-BoldItalic.ttf'), url('fonts/JosefinSans-ExtraLight.ttf'), url('fonts/JosefinSans-ExtraLightItalic.ttf'), url('fonts/JosefinSans-Italic-VariableFont_wght.ttf'), url('fonts/JosefinSans-Italic.ttf'), url('fonts/JosefinSans-Light.ttf'), url('fonts/JosefinSans-LightItalic.ttf'), url('fonts/JosefinSans-Medium.ttf'), url('fonts/JosefinSans-MediumItalic.ttf'), url('fonts/JosefinSans-Regular.ttf'), url('fonts/JosefinSans-SemiBold.ttf'), url('fonts/JosefinSans-SemiBoldItalic.ttf'), url('fonts/JosefinSans-Thin.ttf'), url('fonts/JosefinSans-ThinItalic.ttf'), url('fonts/JosefinSans-VariableFont_wght.ttf');
+    font-weight: lighter;
+}
+
+body {
+    font-family: "Josefin Sans";
+    background-color: rgb(248, 157, 157);
+}
+
+div {
+    padding: 20px;
+    line-height: 25px;
+}
+
+.cuadricula {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    box-shadow: 3px 2px 5px black;
+    background-color: white;
+}
+
+#imagen {
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25pt;
+    font-weight: bolder;
+}
+
+#datos {
+    padding: 10px;
+}
+
+#datos-personales {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#datos-personales>div>img {
+    width: 150px;
+    height: 130px;
+}
+
+#datos-personales>#img-content {
+    display: flex;
+    align-items: center;
+}
+
+#noticias>p {
+    margin-bottom: 20px;
+}
+
+#noticias>h2 {
+    margin-bottom: 20px;
+}
+
+#noticia-img {
+    float: right;
+}
+
+a {
+    color: red;
+}
+
+hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.listasUl-escuela {
+    font-weight: bold;
+}
+
+.listasUl-escuela ol {
+    font-weight: normal;
+}

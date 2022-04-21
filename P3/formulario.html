@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body id="bodyform">
+	<div class="contenedor">
+		<h1 id="tituloform">formulario</h1>
+		<form>
+			<fieldset>
+				<legend>Nombre</legend>
+				<table>
+					<tr>
+						<td><input type="text" name="nombre"></td>
+						<td><input type="text" name="app"></td>
+						<td><input type="text" name="apm"></td>
+					</tr>
+					<tr>
+						<td>Nombre</td>
+						<td>Apellido Paterno</td>
+						<td>Apellido Materno</td>	
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Dirección</legend>
+				<table>
+					<tr>
+						<td><input type="text" name="calle"></td>
+						<td><input type="text" name="no"></td>
+						<td><input type="text" name="colonia"></td>
+						<td><input type="text" name="cp"></td>
+						<td>
+							<select id="delegacion">
+								<option selected="selected">Delegación</option>
+								<option>Azcapotzaclo</option>
+								<option>Coyoacán</option>
+								<option>Cuajimalpa de Morelos</option>
+								<option>Gustavo A. Madero</option>
+								<option>Iztacalco</option>
+								<option>Iztapalapa</option>
+								<option>Magdalena Contreras</option>
+								<option>Milpa Alta</option>
+								<option>Álvaro Obregón</option>
+								<option>Tláhuac</option>
+								<option>Tlalpan</option>
+								<option>Xochimilco</option>
+								<option>Benito Juárez</option>
+								<option>Cuauhtémoc</option>
+								<option>Miguel Hidalgo</option>
+								<option>Venustiano Carranza</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Calle</td>
+						<td>No</td>
+						<td>Colonia</td>
+						<td>CP</td>
+						<td>Delegación</td>
+					</tr>
+				</table>
+			</fieldset>
+			<table>
+				<tr>
+					<td>
+						Sexo:
+						<input type="radio" value="Masculino" name="sexo" checked="checked">Masculino
+						<input type="radio" value="Femenino" name="sexo">Femenino
+						<input type="radio" value="Otro" name="sexo">Otro
+					</td>									
+				</tr>
+				<tr>
+					<td>
+						Fecha de nacimiento:
+						<select>
+							<option selected="selected">Mes</option>
+							<option>Enero</option>
+							<option>Febrero</option>
+							<option>Marzo</option>
+							<option>Abril</option>
+							<option>Mayo</option>
+							<option>Junio</option>
+							<option>Julio</option>
+							<option>Agosto</option>
+							<option>Septiembre</option>
+							<option>Octubre</option>
+							<option>Noviembre</option>
+							<option>Diciembre</option>
+						</select>
+						<select>
+							<option selected="selected">Día</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select>
+							<option selected="selected">Año</option>
+							<option>1999</option>					
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+							<option>2004</option>
+							<option>2005</option>
+							<option>2006</option>
+							<option>2007</option>
+							<option>2008</option>
+							<option>2009</option>
+							<option>2010</option>
+							<option>2011</option>
+							<option>2012</option>
+							<option>2013</option>
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+							<option>2020</option>
+							<option>2021</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>CURP <input type="text" name="curp"></td>			
+				</tr>
+			</table>
+			<fieldset>
+				<legend>Lenguajes de programación</legend>
+				<table>
+					<tr>
+						<td><input type="checkbox">C</td>
+						<td><input type="checkbox">Ruby</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">C++</td>
+						<td><input type="checkbox">Perl</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">Java</td>
+						<td><input type="checkbox">R</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">Python</td>
+						<td><input type="checkbox">Otro</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Pasatiempos</legend>
+				<table>
+					<tr>
+						<td><input type="checkbox">Leer</td>
+						<td><input type="checkbox">Videojuegos</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">Ver TV</td>
+						<td><input type="checkbox">Ir al cine</td>
+						<td><input type="checkbox">Otras cosas</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">Navegar en internet</td>
+						<td><input type="checkbox">Ver Netflix</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Comentarios</legend>
+				<textarea name="comentarios" rows="10" cols="100"></textarea><br>
+				<button>Enviar</button>
+				<button>Borrar</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

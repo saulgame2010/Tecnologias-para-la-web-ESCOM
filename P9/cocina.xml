@@ -1,0 +1,84 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE Recetas [
+    <!ELEMENT Recetas ANY>
+    <!ELEMENT platillo (nombre+, ingredientes+, procedimiento+)>
+    <!ELEMENT platillo-titulo (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ingredientes ANY>
+    <!ELEMENT ingrediente (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT procedimiento (#PCDATA)>
+    <!ATTLIST platillo tipo (pasteles|tortillas|postres) #REQUIRED>
+]>
+<Recetas>
+    <platillo-titulo>Apetitosos pasteles</platillo-titulo>
+    <platillo tipo="pasteles">
+        <nombre>Pastel de choclo</nombre>
+        <ingredientes>
+            <ingrediente>Choclos desgranados, previamente cocidos:</ingrediente><cantidad>2 tazas</cantidad>
+            <ingrediente>Huevos:</ingrediente><cantidad>4</cantidad>
+            <ingrediente>Manteca o matequilla:</ingrediente><cantidad>2 cucharadas</cantidad>
+            <ingrediente>Crema de leche:</ingrediente><cantidad>1/4 de litro</cantidad>
+            <ingrediente>Harina cernida:</ingrediente><cantidad>1/4 de taza</cantidad>
+            <ingrediente>Sal:</ingrediente><cantidad>cantidad necesaria</cantidad>             
+        </ingredientes>
+        <procedimiento>
+            1. Baten los huevos y se le agregan la harina, la sal, el choclo, la manteca y por último la crema
+            de leche, batiendo siempre hasta que la preparación quede bien homogénea. Se coloca luego en un 
+            molde a baño María en horno moderado durante una hora. Se sirve caliente.
+        </procedimiento>
+    </platillo>
+    <platillo tipo="pasteles">
+        <nombre>Pastel de espinacas o acelga</nombre>
+        <ingredientes>
+            <ingrediente>Puré de acelga o espinaca cocida con sal:</ingrediente><cantidad>1 taza</cantidad>
+            <ingrediente>Huevos duros picados:</ingrediente><cantidad>2</cantidad>
+            <ingrediente>Salsa blanca:</ingrediente><cantidad>1 taza</cantidad>
+            <ingrediente>Queso rallado:</ingrediente><cantidad>1/2 taza</cantidad>
+            <ingrediente>Sal:</ingrediente><cantidad>cantidad necesaria</cantidad>
+        </ingredientes>
+        <procedimiento>
+            1. Se mezclan todos los ingredientes, se ponen en una asadera y se espolvorean con pan rallado.
+            Se deja en el horno sólo hasta que se dore.
+        </procedimiento>
+    </platillo>
+    <platillo-titulo>Postres para adornar su mesa</platillo-titulo>
+    <platillo tipo="postres">
+        <nombre>Budín de limón</nombre>
+        <ingredientes>
+            <ingrediente>Azúcar:</ingrediente><cantidad>3/4 taza</cantidad>
+            <ingrediente>Harina:</ingrediente><cantidad>1 taza</cantidad>
+            <ingrediente>Sal:</ingrediente><cantidad>1/4 de cucharadita</cantidad>
+            <ingrediente>Huevos:</ingrediente><cantidad>3</cantidad>
+            <ingrediente>Polvo de hornear:</ingrediente><cantidad>1 cucharadita</cantidad>
+            <ingrediente>Jugo de frutas:</ingrediente><cantidad>1/2 taza</cantidad>
+            <ingrediente>Jugo de limón:</ingrediente><cantidad>2 cucharadas</cantidad>
+            <ingrediente>Ralladura de limón:</ingrediente><cantidad>2 cucharaditas</cantidad>
+        </ingredientes>
+        <procedimiento>
+            1. Se baten separadas las claras y las yemas. Estas últimas, se añaden los dos jugos de fruta.
+            Se mezclan los sólidos: azúcar, harina y sal, y se unen las dos mezclas revolviendo bien. Se baten
+            las claras a punto de nieve y se añaden. Se vuelca la preparación en una budinera enmantecada y se
+            cocina a baño María en el horno, a temperatura suave
+        </procedimiento>
+    </platillo>
+    <platillo-titulo>Tortillas para todos los gustos</platillo-titulo>
+    <platillo tipo="tortillas">
+        <nombre>Tortilla de Arroz</nombre>
+        <ingredientes>
+            <ingrediente>Arroz cocido:</ingrediente><cantidad>1/2 taza</cantidad>
+            <ingrediente>Cebolla chica bien picada:</ingrediente><cantidad>1</cantidad>
+            <ingrediente>Diente de ajo bien picado:</ingrediente><cantidad>1</cantidad>
+            <ingrediente>Huevos:</ingrediente><cantidad>3</cantidad>
+            <ingrediente>Perejil:</ingrediente><cantidad>2 cucharadas</cantidad>
+            <ingrediente>Manteca o mantequilla:</ingrediente><cantidad>1 cucharada</cantidad>
+            <ingrediente>Sal y condimento:</ingrediente><cantidad>cantidad necesaria</cantidad>
+        </ingredientes>
+        <procedimiento>
+            1. Se baten muy bien los tres huevos y se les añade arroz. En la manteca derretida, se doran
+            ligeramente la cebolla y el ajo picados; cuando están listos, se les agrega la mezcla de arroz
+            con huevos y por último la sal y el perejil. Con un tenedor se mezclan bien todos los ingredientes
+            y se deja que la tortilla se dore por un lado; luego se da vuelta para que se dore por el otro.
+        </procedimiento>
+    </platillo>
+</Recetas>

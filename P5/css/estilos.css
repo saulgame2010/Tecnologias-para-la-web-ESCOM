@@ -1,0 +1,401 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url('../fonts/LobsterTwo-Regular.ttf');
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-image: url("../img/nav_fondo5.jpg");
+    background-size: cover;
+}
+
+p {
+    line-height: 23px;
+}
+
+#titulo {
+    width: 49%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    position: absolute;
+    bottom: 0%;
+    color: white;
+}
+
+.titulos,
+.subtitulos {
+    font-family: "Lobster";
+    font-style: normal;
+}
+
+.titulos {
+    font-size: 40px;
+}
+
+.subtitulos {
+    font-size: 25px;
+}
+
+#menu {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+}
+
+#menu ul {
+    line-height: 40px;
+    list-style: none;
+}
+
+#menu ul li {
+    height: 45px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background-color: rgb(30, 175, 5);
+    transition: 700ms;
+}
+
+#presentacion {
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+#img_pres {
+    float: left;
+    width: auto;
+}
+
+#img_pres img {
+    height: 300px;
+    width: 400px;
+}
+
+#choro {
+    float: left;
+    height: 300px;
+    width: 30%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#choro p {
+    color: rgb(200, 63, 63);
+}
+
+#choro>.titulos {
+    color: black;
+}
+
+#choro h1,
+p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#choro button {
+    margin-top: 30px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+    border: 0px;
+    background-color: rgb(0, 45, 128);
+    color: white;
+}
+
+#content {
+    width: 80%;
+    margin: 0px auto;
+}
+
+#izquierda {
+    float: left;
+    width: 68%;
+}
+
+#terapia_alt {
+    width: 100%;
+    float: left;
+}
+
+.info {
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+
+#img_info {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 70%;
+    position: relative;
+}
+
+#img_info img {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 10px grey);
+}
+
+#texto_info {
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.button-more {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(228, 58, 28);
+    border-radius: 2%;
+}
+
+.principal {
+    width: 100%;
+    float: left;
+}
+
+#terapias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#terapias img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+#relleno {
+    width: 100%;
+    float: left;
+}
+
+#terapias p:nth-child(3) {
+    color: blue;
+}
+
+#relleno p:nth-child(2) {
+    color: blue;
+}
+
+#buscador button img {
+    width: 15px;
+    height: 15px;
+}
+
+#buscador button {
+    background-color: rgb(228, 58, 28);
+    border: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+#sidebar {
+    width: 25%;
+    float: right;
+    padding-top: 60px;
+}
+
+.iconos-sidebar {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+#buscador {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 50px;
+}
+
+#barra-busqueda {
+    background-color: rgb(250, 233, 223);
+    border: 0px;
+    height: 25px;
+}
+
+#terapias-disp p:nth-child(2) {
+    color: blue;
+}
+
+#terapias-disp a {
+    text-decoration: none;
+    color: rgb(98, 98, 98)
+}
+
+#terapias-disp li {
+    list-style: none;
+    line-height: 2.5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+#terapias-disp img {
+    width: 10px;
+    height: 10px;
+}
+
+#terapias-disp li a:hover {
+    color: rgb(228, 58, 28);
+}
+
+#noticias {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+#noticias ul li {
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#noticias ul li a {
+    color: rgb(228, 58, 28);
+}
+
+.noticia-cont {
+    color: rgb(64, 64, 214);
+    font-style: italic;
+}
+
+#contacto p:nth-child(2) {
+    color: blue;
+}
+
+footer {
+    background-image: url("../img/footer_fondo.jpg");
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 300px;
+    padding: 40px 80px 40px 80px;
+}
+
+#tips {
+    width: 30%;
+    float: left;
+}
+
+#tips ul li {
+    display: block;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 90%;
+    border-bottom: 2px solid green;
+}
+
+#suscripcion {
+    width: 30%;
+    float: left;
+}
+
+#suscripcion p:nth-child(2) {
+    background-color: rgba(51, 51, 51, 0.5);
+    width: 95%;
+}
+
+#redes {
+    width: 30%;
+    float: left;
+}
+
+.button-more2 {
+    display: block;
+    padding: 15px;
+    color: rgb(228, 58, 28);
+    text-decoration: none;
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(34, 34, 33);
+    border-radius: 2%;
+    float: right;
+    margin-right: 20px;
+}
+
+#escribenos {
+    background-color: rgba(51, 51, 51, 0.5);
+    width: 95%;
+}
+
+#redes ul {
+    line-height: 40px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#redes ul li {
+    height: 45px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#redes ul li img {
+    width: 45px;
+    height: 45px;
+}
+
+#copyright {
+    width: 100%;
+    background-color: rgb(20, 34, 34);
+    color: teal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}

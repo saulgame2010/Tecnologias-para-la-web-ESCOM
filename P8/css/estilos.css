@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face {
+    font-family: "Josefin";
+    src: url('../fonts/JosefinSans-Regular.ttf');
+}
+.clearfix{
+	float: none;
+	clear: both;
+}
+#bodyform{
+	font-family: "Josefin";
+	background-color: #ba68c8;
+}
+#tituloform {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #12005e;
+}
+#bodypersonal {
+	font-family: "Josefin";
+	background-color: #1a237e; 
+}
+.contenedor {
+	margin: 0px auto;
+	width: 80%;
+	padding: 30px;
+	background-color: #f3e5f5;
+	box-shadow: 3px 3px 3px black;
+}
+.contenedorpersonal {
+	margin: 0px auto;
+	width: 80%;
+	padding: 30px;
+	background-color: #c5cae9;
+	box-shadow: 3px 3px 3px black;
+}
+fieldset {
+	margin-top: 15px;
+	border: 1px groove;
+	border-color: #e040fb;
+	padding: 15px;
+}
+fieldset legend{
+	text-transform: uppercase;
+	font-size: 14pt;
+}
+input[type="text"], select, textarea {
+	border: none;
+	border-radius: 3px;
+	padding: 6px;
+}
+button {
+	padding: 15px;
+	color: white;
+	background-color: #4a148c;
+	border: none;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+input[type="text"]:focus {
+	outline: none !important;
+    border:1px solid #5e35b1;
+    box-shadow: 0 0 10px #5e35b1;
+}
+textarea:focus {
+	outline: none !important;
+    border:1px solid #5e35b1;
+    box-shadow: 0 0 10px #5e35b1;
+}
+button:active{
+	box-shadow: inset 0 0 10px #ea80fc;
+	border: 0px;
+	outline: none !important;
+}
+p::first-letter{
+	text-transform: uppercase;
+}
+.listas:first-child{
+	color: red;
+}
+hr {
+	border-color: #304ffe;
+}
+a {
+	color: #5c6bc0;
+	text-decoration: none;
+}
+a:hover {
+	color: #283593;	
+}
+a:visited{
+	color: #304ffe;
+}
+a:visited:hover{
+	color: #283593;
+}
+h3 {
+	color: #1a237e;
+}
+ul, ol {
+	cursor: default;
+}
+a::before{
+	content: "♥";
+}
+p::selection{
+	background-color: #b2ff59;
+}
